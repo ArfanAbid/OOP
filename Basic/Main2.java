@@ -6,9 +6,9 @@ class Main2 {
 
 
   public static void main(String[] args) {
-    Main o1=new Main();
-        Main o2=new Main();
-      Main o3=new Main();
+    Main2 o1=new Main2();
+        Main2 o2=new Main2();
+      Main2 o3=new Main2();
   
                                           
     System.out.println("The value of o1 is"+o1.x);
