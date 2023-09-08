@@ -1,29 +1,22 @@
-class Animal {
-    public void makeSound() {
-        System.out.println("The animal makes a sound.");
-    }
+class Vehical{
+  int no_tyres;
+  void move(){
+    System.out.println("vehical is moving");
+  }
 }
+class Car extends Vehical{
+  void move(){
+    System.out.println("car is moving");}
+  Car(){                  // car constructor
+    super.move();
+  }
 
-class Dog extends Animal {
-    @Override
-    public void makeSound() {
-        System.out.println("The dog barks.");
-    }
 }
-
-class Cat extends Animal {
-    @Override
-    public void makeSound() {
-        System.out.println("The cat meows.");
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Animal animal1 = new Dog();
-        Animal animal2 = new Cat();
-        
-        animal1.makeSound(); // Output: The dog barks.
-        animal2.makeSound(); // Output: The cat meows.
-    }
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+    Vehical v=new Car();// here car constructor is called
+    v.move();
+    
+  }
 }
